@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "env-consts"
+version = "1.0.0"
+description = "Use environment variables as consts in python"
+authors = ["Ofek Weiss <ofek1weiss@gmail.com>"]
+readme = "README.md"
+packages = [{include = "env_consts"}]
+repository = "https://github.com/ofek1weiss/env_consts"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.extras]
+dotenv = ["python-dotenv"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
